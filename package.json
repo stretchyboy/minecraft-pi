@@ -1,22 +1,23 @@
 {
-  "author": "Zachary Bruggeman <zbruggeman@me.com>",
-  "name": "minecraft-pi",
+  "author": "Martyn Eggleton <martyn@edumake.org> Zachary Bruggeman <zbruggeman@me.com>",
+  "name": "minecraft-pi-vec3",
   "description": "A Node.js API for Minecraft: Pi Edition.",
   "license": "MIT",
-  "version": "0.2.1",
-  "homepage": "https://github.com/remixz/minecraft-pi",
+  "version": "0.1",
+  "homepage": "https://github.com/edumake/minecraft-pi-vec3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/remixz/minecraft-pi"
+    "url": "https://github.com/edumake/minecraft-pi-vec3"
   },
   "bugs": {
-    "url": "https://github.com/remixz/minecraft-pi/issues"
+    "url": "https://github.com/edumake/minecraft-pi-vec3/issues"
   },
   "main": "./lib/minecraft.js",
   "scripts": {
     "test": "tap ./test/*.js"
   },
   "dependencies": {
+      "vec3":""
   },
   "devDependencies": {
     "tap": "~0.4.0",

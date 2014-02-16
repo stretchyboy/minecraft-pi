@@ -3,6 +3,7 @@
  *
  * @package minecraft-pi
  * @author Zachary Bruggeman <talkto@zachbruggeman.me>
+ * @author Martyn Eggleton <martyn@edumake.org> 
  */
 
 /**
@@ -11,6 +12,7 @@
 var test = require('tap').test;
 var async = require('async');
 var Minecraft = require('./../lib/minecraft.js');
+var v= require("vec3");
 var client, receivedData; 
 
 async.auto({
@@ -19,7 +21,7 @@ async.auto({
 	},
 
 	data: ['connect', function (callback) {
-		client.getBlock(99999, 99999, 99999, function(data) {
+		client.getBlock(v3(99999, 99999, 99999), function(data) {
 			receivedData = data.toString();
 			client.end();
 			callback();
